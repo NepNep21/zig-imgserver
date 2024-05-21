@@ -1,0 +1,33 @@
+.{
+    .name = "zig-imgserver",
+    .version = "1.0.0",
+
+    .minimum_zig_version = "0.12.0",
+
+    // This field is optional.
+    // Each dependency must either provide a `url` and `hash`, or a `path`.
+    // `zig build --fetch` can be used to fetch all dependencies of a package, recursively.
+    // Once all dependencies are fetched, `zig build` no longer requires
+    // internet connectivity.
+    .dependencies = .{
+        // See `zig fetch --save <url>` for a command-line interface for adding dependencies.
+        .httpz = .{
+            //    // When updating this field to a new URL, be sure to delete the corresponding
+            //    // `hash`, otherwise you are communicating that you expect to find the old hash at
+            //    // the new URL.
+            .url = "https://github.com/karlseguin/http.zig/archive/refs/heads/zig-0.12.tar.gz",
+            //
+            //    // This is computed from the file contents of the directory of files that is
+            //    // obtained after fetching `url` and applying the inclusion rules given by
+            //    // `paths`.
+            //    //
+            //    // This field is the source of truth; packages do not come from a `url`; they
+            //    // come from a `hash`. `url` is just one of many possible mirrors for how to
+            //    // obtain a package matching this `hash`.
+            //    //
+            //    // Uses the [multihash](https://multiformats.io/multihash/) format.
+            .hash = "12209b7426293ebe5075b930ae6029c009bfb6deb7ff92b9d69e28463abd14ad03da",
+        },
+    },
+    .paths = .{"src"},
+}

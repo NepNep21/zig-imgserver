@@ -1,0 +1,7 @@
+{
+    "bindAddress": "0.0.0.0",
+    "bindPort": 8080,
+    "dataDir": "data",
+    "token": "<string>",
+    "domain": "example.com"
+}
