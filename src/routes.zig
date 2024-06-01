@@ -160,7 +160,7 @@ pub fn direct(ctx: *Data, req: *Request, res: *Response) !void {
     res.status = 200;
     res.body = data;
     res.content_type = http.ContentType.forExtension(ext);
-    res.header("Content-Disposition", try std.fmt.allocPrint(res.arena, "attachment; filename={s}", .{name.?}));
+    res.header("Content-Disposition", try std.fmt.allocPrint(res.arena, "inline; filename=\"{s}\"", .{name.?}));
 }
 
 pub fn html(ctx: *Data, req: *Request, res: *Response) !void {
