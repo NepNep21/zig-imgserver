@@ -15,7 +15,7 @@
             //    // When updating this field to a new URL, be sure to delete the corresponding
             //    // `hash`, otherwise you are communicating that you expect to find the old hash at
             //    // the new URL.
-            .url = "https://github.com/karlseguin/http.zig/archive/refs/heads/zig-0.12.tar.gz",
+            .url = "https://github.com/karlseguin/http.zig/archive/06bdfa1e4a1534410d9eeab18c3b9ac608392de5.zip",
             //
             //    // This is computed from the file contents of the directory of files that is
             //    // obtained after fetching `url` and applying the inclusion rules given by
@@ -26,7 +26,7 @@
             //    // obtain a package matching this `hash`.
             //    //
             //    // Uses the [multihash](https://multiformats.io/multihash/) format.
-            .hash = "12209b7426293ebe5075b930ae6029c009bfb6deb7ff92b9d69e28463abd14ad03da",
+            .hash = "1220395b569dd3b953ebcfde7ce44ae968315f8ca094b147689c98d51c1fd4774915",
         },
     },
     .paths = .{"src"},
